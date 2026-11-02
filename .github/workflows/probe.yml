@@ -1,0 +1,7 @@
+name: probe
+on: push
+jobs:
+  probe:
+    runs-on: k3s-bionic
+    steps:
+      - run: echo hello from $(hostname)
